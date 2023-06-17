@@ -15,6 +15,43 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
+      <h1 class="text-center my-4">Shopping Cart</h1>
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scop="col">Total</th>
+                <th scop="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name">Example</td>
+                <td class="price">$<input type="text" value="1.15" /></td>
+                <td class="quantity"><input type="number" value="2" /></td>
+                <td>$<span class="total"></span></td>
+                <td><button class="btn btn-light btn-sm remove">Remove</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
+        <form class="col-12 mt-2 mb-4" id="addItem">
+          <input class="mx-2" name="name" type="text" placeholder="Name" required />
+          <input class="mx-2" name="price" type="text" placeholder="price" />
+          <input class="mx-2" name="quantity" type="number" placeholder="quantity" />
+          <button class="btn btn-primary btn-sm">add</button>
+        </form>
+
+        <div class="col-12 text-right">
+          <h3>Total: $<span id="cartTotal">0.00</span></h3>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

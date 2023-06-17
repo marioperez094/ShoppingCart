@@ -1,3 +1,31 @@
-input {
-  width: 70px;
+body {
+  background: lightgray;
+}
+
+h1 {
+  color: rgb(56, 56, 137);
+}
+
+.clear-all {
+  margin-right: 20px;
+}
+
+.add {
+  margin-top: 15px;
+}
+
+label {
+  margin-top: 20px;
+}
+
+.even {
+  background: lightgray;
+}
+
+.odd {
+  background: white;
+}
+
+.totalCart {
+  color: red;
 }

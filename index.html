@@ -26,31 +26,30 @@
                 <th scope="col">Price</th>
                 <th scope="col">Quantity</th>
                 <th scop="col">Total</th>
-                <th scop="col"></th>
+                <th scop="col">
+                  <button class="btn btn-light btn-sm clear-all">Clear All</button>
+                  <a class="btn btn-primary show-add" href="#addItem">+</a>
+                </th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td class="name">Example</td>
-                <td class="price">$<input type="text" value="1.15" /></td>
-                <td class="quantity"><input type="number" value="2" /></td>
-                <td>$<span class="total"></span></td>
-                <td><button class="btn btn-light btn-sm remove">Remove</button></td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
-
-        <form class="col-12 mt-2 mb-4" id="addItem">
-          <input class="mx-2" name="name" type="text" placeholder="Name" required />
-          <input class="mx-2" name="price" type="text" placeholder="price" />
-          <input class="mx-2" name="quantity" type="number" placeholder="quantity" />
-          <button class="btn btn-primary btn-sm">add</button>
-        </form>
-
-        <div class="col-12 text-right">
+        <div class="col-12 text-right totalCart">
           <h3>Total: $<span id="cartTotal">0.00</span></h3>
         </div>
+
+        <form id="addItem">
+          <label>Name</label>
+          <input class="form-control" name="name" type="text" placeholder="Name" required />
+          <label>Price</label>
+          <input class="form-control" name="price" type="text" placeholder="price" />
+          <label>Quantity</label>
+          <input class="form-control" name="quantity" type="number" placeholder="quantity" />
+          <div class="text-right add">
+            <button class="btn btn-primary text-right">add</button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
